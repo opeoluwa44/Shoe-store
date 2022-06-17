@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+        <div class="wrapper">
+            <header>
+                <a class="logo" href="#">Shoe<span>Brand</span></a>
+
+                <nav>
+                    <svg class="close" viewBox="0 0 352 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg> 
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sneakers</a></li>
+                        <li><a href="#">Players</a></li>
+                    </ul>
+
+                </nav>
+
+                <svg class="menu" viewBox="0 0 512 512" width="100" title="stream">
+                    <path d="M16 128h416c8.84 0 16-7.16 16-16V48c0-8.84-7.16-16-16-16H16C7.16 32 0 39.16 0 48v64c0 8.84 7.16 16 16 16zm480 80H80c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16zm-64 176H16c-8.84 0-16 7.16-16 16v64c0 8.84 7.16 16 16 16h416c8.84 0 16-7.16 16-16v-64c0-8.84-7.16-16-16-16z" />
+                    </svg>                      
+
+
+            </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+            <p class="subhead">A shoe built with purpose to take your game to the next level</p>
+
+            <svg class="down-arrow" viewBox="0 0 256 512" width="100" title="long-arrow-alt-down">
+                <path d="M168 345.941V44c0-6.627-5.373-12-12-12h-56c-6.627 0-12 5.373-12 12v301.941H41.941c-21.382 0-32.09 25.851-16.971 40.971l86.059 86.059c9.373 9.373 24.569 9.373 33.941 0l86.059-86.059c15.119-15.119 4.411-40.971-16.971-40.971H168z" />
+              </svg>
+              
+        </section>
+
+        <section class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla aspernatur sint dolorem suscipit laboriosam!</p>
+                </div>
+                <img src="shoe-img/yellowshoe.jpg" alt="yellow shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla aspernatur sint dolorem suscipit laboriosam!</p>
+                </div>
+                <img src="shoe-img/brownshoe.jpg" alt="brown shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla aspernatur sint dolorem suscipit laboriosam!</p>
+                </div>
+                <img src="shoe-img/jordanshoe.jpg" alt="jordan shoe">
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const menu = document.querySelector(".menu")
+        const close = document.querySelector(".close")
+        const nav = document.querySelector("nav")
+
+        menu.addEventListener('click',() => {nav.classList.add('open-nav')
+        })
+        close.addEventListener('click',() => {nav.classList.remove('open-nav')
+        })
+    </script>
+    
+</body>
+</html>
